@@ -1,41 +1,12 @@
-# Prerequisites
-*.d
+# 忽略所有文件
+*.*
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# 但不忽略 .proto 文件
+!*.cpp
+!*.hpp
+!*.h
+!*.cc
+!*.c
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# debug information files
-*.dwo
+# 确保 .gitignore 文件本身不被忽略
+!.gitignore
