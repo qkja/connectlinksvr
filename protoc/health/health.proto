@@ -1,0 +1,29 @@
+/**
+* health
+* 健康检查接口
+*/
+syntax = "proto3";
+// 为Go生成代码的选项
+option go_package=".;health";
+// 为C++生成代码的选项 (namespace)
+option cc_generic_services = false;
+
+package health;
+
+// Health Health service
+service HealthService {
+    // 查询服务健康状态
+    rpc Health(HealthReq) returns (HealthRsp) {}
+}
+
+// HealthReq HealthReq
+message HealthReq {
+}
+
+// HealthRsp HealthRsp
+message HealthRsp {
+    string code = 1;
+    string msg = 2;
+}
+
+
